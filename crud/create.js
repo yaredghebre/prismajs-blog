@@ -4,10 +4,10 @@ prisma.post
   .create({
     data: {
       title: "This is my very first post",
-      content: "Shit, I hope you'll like it!",
-      slug: "this-is-my-very-first-post",
+      content: "Doing bonus exercise!",
+      slug: "this-is-my-very-first-post-bonus",
       image: "post.jpeg",
-      published: true,
+      published: false,
     },
   })
   .then((newPost) => {
