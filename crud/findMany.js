@@ -7,7 +7,10 @@ prisma.post
     //   title: true,
     // },
     where: {
-      published: true,
+      // published: true,
+      content: {
+        contains: "Shit",
+      },
     },
   })
   .then((posts) => {
